@@ -1,7 +1,7 @@
 import PropTypes from 'prop-types'
 import styles from './Toolbar.module.css'
 
-const Toolbar = ({ filters, selected, onSelectFilter }) => {
+const Toolbar = ({ filters, selected = 'All', onSelectFilter }) => {
   return (
     <div className={styles.toolbar}>
       {filters.map((filter) => (
@@ -15,10 +15,6 @@ const Toolbar = ({ filters, selected, onSelectFilter }) => {
       ))}
     </div>
   )
-}
-
-Toolbar.defaultProps = {
-  filters: ['All'],
 }
 
 Toolbar.propTypes = {
