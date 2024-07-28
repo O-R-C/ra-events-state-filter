@@ -1,0 +1,10 @@
+.column {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+
+  & img {
+    display: block;
+    width: 100%;
+  }
+}
